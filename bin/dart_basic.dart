@@ -1,10 +1,8 @@
 void main(List<String> arguments) {
-  dynamic message = 'Some text';
-  var number = 10;
+  // IF
 
-  print('variable message has type: ${message.runtimeType}');
-  print('variable number has type: ${number.runtimeType}');
+  // IF ELSE IF
 
-  message = 4;
-  print('after changes variable message has type: ${message.runtimeType}');
+  // ? :
+  
 }
