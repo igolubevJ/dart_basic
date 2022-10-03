@@ -1,7 +1,12 @@
-void main(List<String> arguments) {
-  int myAge = 30;
+class Person {
+  final name = "Илья";
+  static const age = 30;
+}
 
-  var myName = "Илья";
+void main(List<String> arguments) {
+  const myAge = 30;
+
+  final myName = "Илья";
 
   print("$myName $myAge");
 }
