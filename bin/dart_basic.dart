@@ -3,5 +3,8 @@ void main(List<String> arguments) {
   do {
     print("Hello Dart!");
     counter++;
+    if (counter == 4) {
+      break;
+    }
   } while (counter < 10);
 }
