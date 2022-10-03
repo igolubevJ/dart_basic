@@ -19,7 +19,20 @@ void main(List<String> arguments) {
     print("B grade");
   } else if (marks > 30 && marks < 60) {
     print("C grade");
+  } else {
+    print("Invalid marks! please try again.");
   }
 
   // ? :
+  int x = 1;
+  int y = 2;
+
+  if (x < y) {
+    print(x + y);
+  } else {
+    print(x - y);
+  }
+
+  int z = x < y ? x + y : x - y;
+  print(z);
 }
