@@ -1,10 +1,38 @@
 void main(List<String> arguments) {
-  dynamic message = 'Some text';
-  var number = 10;
+  // IF ELSE
+  var grade = 5;
 
-  print('variable message has type: ${message.runtimeType}');
-  print('variable number has type: ${number.runtimeType}');
+  if (grade == 4) {
+    print('Excelent grade of A');
+  } else {
+    print('Very good!');
+  }
 
-  message = 4;
-  print('after changes variable message has type: ${message.runtimeType}');
+  // IF ELSE IF
+  var marks = 60;
+
+  if (marks >= 90 && marks < 100) {
+    print("A+ grade");
+  } else if (marks >= 80 && marks < 90) {
+    print("A grade");
+  } else if (marks >= 60 && marks < 80) {
+    print("B grade");
+  } else if (marks > 30 && marks < 60) {
+    print("C grade");
+  } else {
+    print("Invalid marks! please try again.");
+  }
+
+  // ? :
+  int x = 1;
+  int y = 2;
+
+  if (x < y) {
+    print(x + y);
+  } else {
+    print(x - y);
+  }
+
+  int z = x < y ? x + y : x - y;
+  print(z);
 }
