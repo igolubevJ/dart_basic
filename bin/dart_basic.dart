@@ -7,6 +7,7 @@ void main(List<String> arguments) {
   numberList[2] = 102;
   numberList[3] = 90;
   numberList[4] = 10;
-  
+
   print(numberList);
+  print("Get second elemet from numberList: ${numberList[1]}");
 }
