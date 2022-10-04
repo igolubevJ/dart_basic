@@ -9,7 +9,7 @@ class Car {
 
   Car({String name = "", double per = 0.0})
       : carName = name,
-        percentWay = per {
+        percentWay = per.roundToDouble() {
     print("Other work");
   }
 
