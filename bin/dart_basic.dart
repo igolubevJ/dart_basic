@@ -15,5 +15,7 @@ void main(List<String> arguments) {
   // Update field
   traffickLight['yellow'] = 'wait';
 
+  print(traffickLight['yellow']);
+
   print(traffickLight);
 }
