@@ -1,15 +1,7 @@
 void main(List<String> arguments) {
-  sayHello();
-
-  String name = getName();
-  print(name);
-
-  String age = getAge(30);
-  print(age);
+  getPerson("John", 30);
 }
 
-void sayHello() => print('Hello Dart');
-
-String getName() => 'Илья';
-
-String getAge(int age) => 'You age $age';
+void getPerson(String name, int age) {
+  print("name: $name, age: $age");
+}
