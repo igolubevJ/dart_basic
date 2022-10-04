@@ -8,17 +8,8 @@ void main(List<String> arguments) {
   print(age);
 }
 
-// [тип] имя_функции(параметры) {
-//    тело функции
-// }
-void sayHello() {
-  print('Hello Dart');
-}
+void sayHello() => print('Hello Dart');
 
-String getName() {
-  return 'Илья';
-}
+String getName() => 'Илья';
 
-String getAge(int age) {
-  return 'You age $age';
-}
+String getAge(int age) => 'You age $age';
