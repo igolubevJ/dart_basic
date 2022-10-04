@@ -2,6 +2,10 @@ void main(List<String> arguments) {
   var person = getName;
 
   person();
+
+  person = getAge;
+
+  person();
 }
 
 void getName() {
@@ -9,5 +13,5 @@ void getName() {
 }
 
 void getAge() {
-  print('Dou');
+  print(27);
 }
