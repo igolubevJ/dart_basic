@@ -1,8 +1,8 @@
 void main(List<String> arguments) {
-  getPerson("John", 30);
-  getPerson("Jane");
+  getPerson(name: "John", age: 30);
+  getPerson(age: 27, name: "Jane");
 }
 
-void getPerson(String name, [int age = 0]) {
+void getPerson({String name = '<empty>', int age = 0}) {
   print("name: $name, age: $age");
 }
