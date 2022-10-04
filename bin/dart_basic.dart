@@ -1,5 +1,5 @@
 void main(List<String> arguments) {
-  var person = getName;
+  Function person = getName;
 
   person();
 
