@@ -6,7 +6,7 @@ void main(List<String> arguments) {
 class Car {
   String carName = "Ford";
   String color = "black";
-  int wheels = 4;
+  static int wheels = 4;
 
   Car(this.carName, this.color);
 
