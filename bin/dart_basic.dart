@@ -12,6 +12,8 @@ void main(List<String> arguments) {
   try {
     List list = [double.parse("3.14"), 2, 3];
     print(list[5]);
+  } on RangeError {
+    print("Out of bound of list");
   } catch (e) {
     print("The Exception: $e");
   }
