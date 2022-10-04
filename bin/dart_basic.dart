@@ -5,7 +5,13 @@ void main(List<String> arguments) {
 
   car.start();
 
-  print(car);
+  Car car2 = Car();
+  car2.carName = "BMW";
+  car2.color = "white";
+
+  car2.start();
+
+  car.stop();
 }
 
 class Car {
@@ -14,5 +20,9 @@ class Car {
 
   void start() {
     print("The $color $carName has started");
+  }
+
+  void stop() {
+    print("This $color $carName has stopped");
   }
 }
