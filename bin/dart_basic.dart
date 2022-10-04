@@ -17,4 +17,8 @@ void main(List<String> arguments) {
   for (int i = 0; i < numberList.length; i++) {
     print('$i -> ${numberList[i]}');
   }
+
+  for (int element in numberList) {
+    print('element = $element');
+  }
 }
