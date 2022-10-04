@@ -19,4 +19,8 @@ void main(List<String> arguments) {
   // Remove element by index
   numberList.removeAt(1);
   print(numberList);
+
+  // Remove all
+  numberList.clear();
+  print(numberList);
 }
