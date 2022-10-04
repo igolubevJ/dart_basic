@@ -11,4 +11,12 @@ void main(List<String> arguments) {
   numberList.add(2);
   numberList.add(90);
   print(numberList);
+
+  // Remove elemet by value
+  numberList.remove(2);
+  print(numberList);
+
+  // Remove element by index
+  numberList.removeAt(1);
+  print(numberList);
 }
