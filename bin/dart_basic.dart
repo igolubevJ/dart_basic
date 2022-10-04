@@ -12,6 +12,21 @@ void main(List<String> arguments) {
   numberList.add(90);
   print(numberList);
 
+  // Return firest elemet
+  print("Get the first elemet from the numberList: ${numberList.first}");
+
+  // Return last elemet
+  print("Get the last elemet from the numberList: ${numberList.last}");
+
+  // Return length of list
+  print('Get length of numberList: ${numberList.length}');
+
+  // List is empty?
+  print('numberList is empty? -> ${numberList.isEmpty}');
+
+  // Reverse the list
+  print('numberList reversed: ${numberList.reversed}');
+
   // Remove elemet by value
   numberList.remove(2);
   print(numberList);
@@ -23,4 +38,6 @@ void main(List<String> arguments) {
   // Remove all
   numberList.clear();
   print(numberList);
+
+  print('numberList is empty? -> ${numberList.isEmpty}');
 }
