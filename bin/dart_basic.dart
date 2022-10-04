@@ -11,7 +11,14 @@ class Car {
   String color = "black";
   static int wheels = 4;
 
-  Car(this.carName, this.color);
+  Car(this.carName, this.color) {
+    var t = time(500, 80);
+    print("Time: $t");
+  }
+
+  static double time(int dist, double speed) {
+    return dist / speed;
+  }
 
   void checkMove() {
     if (wheels < 4) {
