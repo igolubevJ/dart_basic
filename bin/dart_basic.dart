@@ -9,4 +9,13 @@ void main(List<String> arguments) {
   numberSet.add(10);
 
   print(numberSet);
+
+  // Loop set
+  for (var element in numberSet) {
+    print("element = $element");
+  }
+
+  numberSet.forEach((element) {
+    print('forEach element => $element');
+  });
 }
