@@ -1,17 +1,5 @@
 void main(List<String> arguments) {
   Car car = Car();
-  car.carName = "Ford";
-  car.color = "black";
-
-  car.start();
-
-  Car car2 = Car();
-  car2.carName = "BMW";
-  car2.color = "white";
-
-  car2.start();
-
-  car.stop();
 }
 
 class Car {
