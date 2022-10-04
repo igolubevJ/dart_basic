@@ -7,10 +7,7 @@ class Car {
   String carName = "";
   var color = "";
 
-  Car(String carName, var color) {
-    this.carName = carName;
-    this.color = color;
-  }
+  Car(this.carName, this.color);
 
   void start() {
     print("The $color $carName has started");
