@@ -1,18 +1,20 @@
 void main(List<String> arguments) {
-  var car = Car("BMW", 40.0, 2);
-  car.move();
-
-  print("Car have ${car.wheels} wheels");
+  var car = Car("BMW", "red");
+  car.checkMove();
 }
 
 class Car {
   String carName = "Ford";
-  double percentWay = 0.0;
-  final int wheels;
+  String color = "black";
+  int wheels = 4;
 
-  Car(this.carName, this.percentWay, wheel) : wheels = wheel + 2;
+  Car(this.carName, this.color);
 
-  void move() {
-    print("The $carName has started. Percent way: $percentWay");
+  void checkMove() {
+    if (wheels < 4) {
+      print("This $carName is broken");
+    } else {
+      print("The $color $carName has started");
+    }
   }
 }
