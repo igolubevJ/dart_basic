@@ -21,4 +21,6 @@ void main(List<String> arguments) {
   for (int element in numberList) {
     print('element = $element');
   }
+
+  numberList.forEach((element) => print(element));
 }
