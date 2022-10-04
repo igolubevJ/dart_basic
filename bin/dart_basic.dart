@@ -1,5 +1,5 @@
 void main(List<String> arguments) {
-  Car car = Car("Ford", "black");
+  Car car = Car("Ford");
   car.start();
 }
 
@@ -7,7 +7,7 @@ class Car {
   String carName = "";
   var color = "";
 
-  Car(this.carName, this.color);
+  Car(this.carName, [this.color = "blue"]);
 
   void start() {
     print("The $color $carName has started");
