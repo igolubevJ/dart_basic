@@ -3,6 +3,9 @@ void main(List<String> arguments) {
 
   int result = add(20);
   print(result);
+
+  int result2 = addNumber(1)(20);
+  print(result2);
 }
 
 Function addNumber(int x) {
