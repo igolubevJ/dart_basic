@@ -4,6 +4,9 @@ void main(List<String> arguments) {
 
   Car bmw = Car.named();
   bmw.start();
+
+  Car bmwWithColor = Car.fromColor("orange");
+  bmwWithColor.start();
 }
 
 class Car {
@@ -13,6 +16,11 @@ class Car {
   Car.named() {
     carName = "BMW";
     color = "green";
+  }
+
+  Car.fromColor(this.color) {
+    carName = "BMW";
+    // this.color = color;
   }
 
   Car(this.carName, {this.color = "blue"});
