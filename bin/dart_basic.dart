@@ -16,5 +16,7 @@ void main(List<String> arguments) {
     print("Out of bound of list");
   } catch (e) {
     print("The Exception: $e");
+  } finally {
+    print("This is finally and is always executed");
   }
 }
