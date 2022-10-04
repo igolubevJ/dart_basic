@@ -1,6 +1,9 @@
 void main(List<String> arguments) {
   var car = Car("BMW", "red");
   car.checkMove();
+
+  Car.wheels = 3;
+  car.checkMove();
 }
 
 class Car {
