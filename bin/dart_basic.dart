@@ -18,4 +18,16 @@ void main(List<String> arguments) {
   numberSet.forEach((element) {
     print('forEach element => $element');
   });
+
+  // Methods
+  print(numberSet.contains(10));
+
+  numberSet.remove(10);
+  print(numberSet);
+
+  print(numberSet.contains(10));
+
+  print(numberSet.length);
+
+  print(numberSet.isEmpty);
 }
