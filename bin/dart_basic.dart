@@ -6,6 +6,13 @@ void main(List<String> arguments) {
   person = getAge;
 
   person();
+
+  getPerson(getName);
+  getPerson(getAge);
+}
+
+void getPerson(Function func) {
+  func();
 }
 
 void getName() {
