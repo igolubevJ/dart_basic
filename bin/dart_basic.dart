@@ -29,4 +29,17 @@ void main(List<String> arguments) {
   traffickLight.forEach((key, value) {
     print('$key => $value');
   });
+
+  // Methods
+  print(traffickLight.containsKey('red'));
+
+  traffickLight.update('green', (value) => 'green1');
+  print(traffickLight);
+
+  traffickLight.remove('red');
+  print(traffickLight);
+
+  print(traffickLight.length);
+
+  print(traffickLight.isEmpty);
 }
