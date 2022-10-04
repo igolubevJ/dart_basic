@@ -13,4 +13,8 @@ void main(List<String> arguments) {
 
   numberList[0] = 25;
   print('After update first element, numberList is equal $numberList');
+
+  for (int i = 0; i < numberList.length; i++) {
+    print('$i -> ${numberList[i]}');
+  }
 }
