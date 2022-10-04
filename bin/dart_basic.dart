@@ -1,4 +1,9 @@
-void main(List<String> arguments) {}
+void main(List<String> arguments) {
+  var car = Car();
+
+  car.carName = "Ford"; // use default Setters
+  print(car.carName); // use default Getters
+}
 
 class Car {
   String carName = "";
