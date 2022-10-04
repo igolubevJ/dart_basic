@@ -16,6 +16,17 @@ void main(List<String> arguments) {
   traffickLight['yellow'] = 'wait';
 
   print(traffickLight['yellow']);
-
   print(traffickLight);
+
+  for (var key in traffickLight.keys) {
+    print(key);
+  }
+
+  for (var values in traffickLight.values) {
+    print(values);
+  }
+
+  traffickLight.forEach((key, value) {
+    print('$key => $value');
+  });
 }
