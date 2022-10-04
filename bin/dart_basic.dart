@@ -9,6 +9,19 @@ void main(List<String> arguments) {
 
   getPerson(getName);
   getPerson(getAge);
+
+  Function myPerson = getNameOrAge('name');
+  myPerson();
+
+  myPerson = getNameOrAge('');
+  myPerson();
+}
+
+Function getNameOrAge(String nameOrage) {
+  if (nameOrage == 'name') {
+    return getName;
+  }
+  return getAge;
 }
 
 void getPerson(Function func) {
