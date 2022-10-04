@@ -10,7 +10,7 @@ class Car {
   double percentWay = 0.0;
   final int wheels;
 
-  Car(this.carName, this.percentWay, this.wheels);
+  Car(this.carName, this.percentWay, wheel) : wheels = wheel + 2;
 
   void move() {
     print("The $carName has started. Percent way: $percentWay");
