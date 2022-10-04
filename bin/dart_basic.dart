@@ -1,15 +1,12 @@
 void main(List<String> arguments) {
-  List<int> list1 = [1, 2, 3];
+  List<int> numberList = List.filled(5, 0);
+  print(numberList);
 
-  var list2 = List<String>.filled(10, '<empty>');
-
-  var list3 = [];
-
-  var list4 = [1, 'string', true];
-
-  var list5 = [
-    [1, 2, 3],
-    ['hello'],
-    [true, false]
-  ];
+  numberList[0] = 22;
+  numberList[1] = 33;
+  numberList[2] = 102;
+  numberList[3] = 90;
+  numberList[4] = 10;
+  
+  print(numberList);
 }
